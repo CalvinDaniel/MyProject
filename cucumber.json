@@ -1,0 +1,140 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-07-22T11:22:44.863Z",
+        "line": 11,
+        "name": "The user logs in",
+        "description": "",
+        "id": "testmeapp;the-user-logs-in;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10715403431,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user has to signin",
+            "match": {
+              "location": "Addtocart.the_user_has_to_signin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297147594,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user provides \"AlexUser\" and \"Alex@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AlexUser\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Alex@123\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Addtocart.the_user_provides_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 343216535,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks the signin button",
+            "match": {
+              "location": "Addtocart.the_user_clicks_the_signin_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T11:22:56.239Z",
+        "line": 13,
+        "name": "The one where user moves to cart without adding any items in it",
+        "description": "",
+        "id": "testmeapp;the-one-where-user-moves-to-cart-without-adding-any-items-in-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74331,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Alex has registered into testmeapp",
+            "match": {
+              "location": "Addtocart.alex_has_registered_into_testmeapp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494402018,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "alex searches for headphone",
+            "match": {
+              "location": "Addtocart.alex_searches_for_headphone()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1322865127,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "try to proceed without adding any items to the cart",
+            "match": {
+              "location": "Addtocart.try_to_proceed_without_adding_any_items_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d75.0.3770.142)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027DESKTOP-6SQHBTO\u0027, ip: \u0027192.168.50.14\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\\Users\\test\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3c850ec21f50977e056dfab2ea50f34e\n*** Element info: {Using\u003dxpath, value\u003d.//a[@href\u003d\u0027logout.htm\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat jenkinscase.Addtocart.testmeapp_doesn_t_display_the_icon(Addtocart.java:70)\r\n\tat ✽.TestMeApp doesn\u0027t display the icon(classpath:jenkinscase/addto.feature:17)\r\n",
+              "duration": 100931001,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "TestMeApp doesn\u0027t display the icon",
+            "match": {
+              "location": "Addtocart.testmeapp_doesn_t_display_the_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "TestMeApp",
+    "description": "",
+    "id": "testmeapp",
+    "keyword": "Feature",
+    "uri": "classpath:jenkinscase/addto.feature",
+    "tags": []
+  }
+]
